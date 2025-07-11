@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Info</title>
+  </head>
+  <body>
+    <div id="name"></div>
+    <div id="summary"></div>
+    <div id="education"></div>
+
+    <div id="technical-skills"></div>
+<div id="experience"></div>
+<div id="projects"></div>
+<div id="achievements"></div>
+    <script>
+      let name = "Vamshi M";
+      let contact_details =
+        `Mobile: 8745235678 | Email: vamshim@gmail.com |  Linkedin: https://linkedin.com/in/vamshi-m-495657762 | Github: https://github.com/vamshi726`;
+      let summary = `Motivated Computer Science graduate with a strong foundation in Object-Oriented Programming, Python, and software 
+quality principles. Seeking an entry-level opportunity to contribute to software development and testing within a 
+collaborative, agile environment. Eager to apply my problem-solving skills, passion for programming, and willingness to 
+learn new technologies. Committed to continuous growth, teamwork, and excellence in engineering practices. Excited to 
+join a dynamic organization where I can support business needs and grow into a well-rounded software professional.`;
+
+        let college=`Sri Indu College of Engineering and Technology Hyderabad               - 2023`
+        let course="Bachelor of Technology in Computer Science and Engineering  -  CGPA: 7.47/10  "
+        function createHrTag() {
+  return document.createElement("hr");
+}
+
+      let section1 = document.getElementById("name");
+
+      // Create heading
+      let nameElement = document.createElement("h1");
+      nameElement.innerText = name;
+      section1.appendChild(nameElement); 
+
+      // Create contact paragraph
+      let contactElement = document.createElement("p");
+      contactElement.innerText = contact_details;
+      section1.appendChild(contactElement);
+      
+      //create summary head
+      let section2 = document.getElementById("summary");
+      let summaryHead = document.createElement("h2");
+      summaryHead.innerText = "Summary";
+      section2.appendChild(summaryHead); 
+
+      // Create summary paragraph
+      let summaryElement = document.createElement("p");
+      summaryElement.innerText = summary;
+      section2.appendChild(createHrTag())
+      section2.appendChild(summaryElement);
+
+
+
+      //create Education head
+      let eduSection = document.getElementById("education");
+      let eduHead = document.createElement("h2");
+      eduHead.innerText = "Education";
+      eduSection.appendChild(eduHead); 
+      eduSection.appendChild(createHrTag())
+      
+      // Create Education college
+      let college_element = document.createElement("h4");
+      let coursename = document.createElement("p");
+      college_element.innerText = college;
+      coursename .innerText = course;
+      eduSection.appendChild(college_element);
+      eduSection.appendChild(coursename);
+      
+
+      function createHrTag() {
+  return document.createElement("hr");
+}
+
+// ===== TECHNICAL SKILLS =====
+let techSection = document.getElementById("technical-skills");
+let techHead = document.createElement("h2");
+techHead.innerText = "Technical Skills";
+techSection.appendChild(techHead);
+techSection.appendChild(createHrTag());
+ 
+
+let progLang = document.createElement("p");
+progLang.innerText = "Programming Languages: Java, HTML, CSS, JavaScript";
+techSection.appendChild(progLang);
+
+let frameworks = document.createElement("p");
+frameworks.innerText = "Frameworks/Libraries: React.js, Node.js, Express.js, Tailwind CSS, Web Services";
+techSection.appendChild(frameworks);
+
+let databases = document.createElement("p");
+databases.innerText = "Databases: MySQL, MongoDB, RDBMS";
+techSection.appendChild(databases);
+
+let devTools = document.createElement("p");
+devTools.innerText = "Developer Tools: Git, GitHub, Visual Studio Code, Postman";
+techSection.appendChild(devTools);
+
+
+// ===== EXPERIENCE =====
+let expSection = document.getElementById("experience");
+let expHead = document.createElement("h2");
+expHead.innerText = "Experience";
+expSection.appendChild(expHead);
+expSection.appendChild(createHrTag());
+
+let company = document.createElement("h4");
+company.innerText = "Edunet Foundation - Frontend Developer Intern";
+expSection.appendChild(company);
+
+let exp1 = document.createElement("p");
+exp1.innerText = "• Built a dynamic blogging platform that allows users to create, edit, and manage blog posts with ease.";
+expSection.appendChild(exp1);
+
+let exp2 = document.createElement("p");
+exp2.innerText = "• Designed an intuitive interface with smooth navigation for an improved user experience.";
+expSection.appendChild(exp2);
+
+let exp3 = document.createElement("p");
+exp3.innerText = "• Ensured secure user authentication and implemented robust form validation for data integrity.";
+expSection.appendChild(exp3);
+
+let exp4 = document.createElement("p");
+exp4.innerText = "• Incorporated image upload functionality with Cloudinary for smooth media management and storage.";
+expSection.appendChild(exp4);
+
+
+// ===== PROJECTS =====
+let projectSection = document.getElementById("projects");
+let projectHead = document.createElement("h2");
+projectHead.innerText = "Projects";
+projectSection.appendChild(projectHead);
+projectSection.appendChild(createHrTag());
+ 
+
+// Food Villa
+let project1 = document.createElement("h4");
+project1.innerText = "Food Villa";
+projectSection.appendChild(project1);
+
+let p1_1 = document.createElement("p");
+p1_1.innerText = "• Developed a food ordering app using Swiggy's API with location-based recommendations and menu browsing.";
+projectSection.appendChild(p1_1);
+
+let p1_2 = document.createElement("p");
+p1_2.innerText = "• Utilized React concepts like JSX, Hooks, Router, and optimized performance with Custom Hooks, Suspense, and data caching.";
+projectSection.appendChild(p1_2);
+
+let p1_3 = document.createElement("p");
+p1_3.innerText = "• Applied Tailwind CSS for responsive UI design and implemented Redux Toolkit for state management with Jest for testing.";
+projectSection.appendChild(p1_3);
+
+let p1_4 = document.createElement("p");
+p1_4.innerText = "• Wrote unit and integration tests using Jest to ensure code reliability and minimize bugs.";
+projectSection.appendChild(p1_4);
+
+// Quick Pay
+let project2 = document.createElement("h4");
+project2.innerText = "Quick Pay";
+projectSection.appendChild(project2);
+
+let p2_1 = document.createElement("p");
+p2_1.innerText = "• Developed a secure money transfer web application using React.js for frontend and Node.js for Backend.";
+projectSection.appendChild(p2_1);
+
+let p2_2 = document.createElement("p");
+p2_2.innerText = "• Implemented JWT authentication for secure user sessions and Zod for data validation to ensure input integrity.";
+projectSection.appendChild(p2_2);
+
+let p2_3 = document.createElement("p");
+p2_3.innerText = "• Integrated React Router for efficient navigation and enhanced user experience.";
+projectSection.appendChild(p2_3);
+
+let p2_4 = document.createElement("p");
+p2_4.innerText = "• Utilized RESTful API design principles for maintainable and scalable backend architecture.";
+projectSection.appendChild(p2_4);
+
+
+// ===== ACHIEVEMENTS =====
+let achSection = document.getElementById("achievements");
+let achHead = document.createElement("h2");
+achHead.innerText = "Achievements";
+achSection.appendChild(achHead);
+achSection.appendChild(createHrTag());
+
+let ach1 = document.createElement("p");
+ach1.innerText = "• Led a team to secure first place in the 'Hack This Fall' Virtual Hackathon, demonstrating teamwork and problem-solving skills.";
+achSection.appendChild(ach1);
+
+let ach2 = document.createElement("p");
+ach2.innerText = "• Contributed to open-source projects as part of Girl Script Summer of Code (GSSoC).";
+achSection.appendChild(ach2);
+
+
+
+    </script>
+  </body>
+</html>
